@@ -1,6 +1,6 @@
 # Nervos Network 定位白皮书
 
-原文链接请点击[这里](https://github.com/nervosnetwork/rfcs/pull/138/commits/ea246c0d21c31a8195678658931cacdd4db37be5#diff-616b7ea527e9b7586b9062a18c620018)
+原文链接请点击[这里](https://github.com/nervosnetwork/rfcs/blob/79a6774eb16f5077617f3eef580653316fbdcb16/rfcs/0001-positioning/0001-positioning.md)
 
 ## 1. 目的
 
