@@ -98,7 +98,7 @@ Mặc dù đã có rất nhiều nghiên cứu về các giao thức đồng thu
 
 Chúng tôi tin rằng một mô hình kinh tế được thiết kế hiệu quả cần vượt ra ngoài quy trình đồng thuận và đảm bảo tính bên vững lâu dài của giao thức. Cụ thể là hình mẫu kinh tế cần được thiết kế với những mục tiêu sau:
 
-- Chúng tôi tin rằng một mô hình kinh tế được thiết kế hiệu quả cần vượt ra ngoài quy trình đồng thuận và đảm bảo tính bên vững lâu dài của giao thức. Cụ thể là hình mẫu kinh tế cần được thiết kế với những mục tiêu sau:
+- Mạng phải có hướng đi bền vững để tăng doanh thu bù cho các bên cung cấp dịch vụ (thường là những người đào hoặc người xác nhận giaio dịch), đảm bảo rằng mạng vẫn an toàn bền vững. 
 
 - Mạng phải có hướng đi bền vững để duy trì rào cản thấp đối với sự tham gia, đảm bảo rằng mạng vẫn duy trì tính phi tập trung theo thời gian
 
@@ -127,6 +127,8 @@ Với sự tồn tại của phần thưởng block, Bitcoin có thể mở rộ
 Tuy nhiên, điều này thay đổi khi phần thưởng block dự đoán giảm xuống bằng không. Người khai thác sẽ phải phụ thuộc hoàn toàn vào phí giao dịch; thu nhập của họ sẽ không còn quy mô theo giá trị của tài sản Bitcoin mà sẽ được xác định bởi nhu cầu giao dịch của mạng. Nếu nhu cầu giao dịch không đủ cao để lấp đầy không gian block có sẵn, tổng phí giao dịch sẽ rất nhỏ. Vì phí giao dịch hoàn toàn là một chức năng của nhu cầu không gian block và độc lập với giá của Bitcoin nên điều này sẽ có tác động sâu sắc đến mô hình bảo mật của Bitcoin.
 
 Thứ hai, khi phần thưởng block dự đoán dừng lại, chênh lệch thu nhập trên mỗi block cho người khai thác sẽ tăng lên và tạo ra lợi ích của các người đào khi fork mạng lưới thay vì phát triển blockchain hiện tại. Trong trường hợp cực đoan, khi mempool (khu vực giữa các nút cho tất cả các giao dịch đang chờ xử lý) của một máy đào trống rỗng và họ nhận được một block chứa đầy giá trị, động cơ của họ là fork mạng lưới và đánh cắp các khoản phí này thay hỗ trợ mạng lưới tạo ra một block không có thu nhập [5]. Đây được gọi là thử thách "fee nipping" trong Bitcoin. Hiện chưa tìm thấy giải pháp thỏa mãn thách thức nêu trên mà không cần loại bỏ hardcap của Bitcoin.
+
+Hiện chưa tìm thấy giải pháp thỏa mãn thách thức nêu trên mà không cần loại bỏ hardcap của Bitcoin.
 
 #### 2.2.4 Phân tích mô hình kinh tế của các nền tảng hợp đồng thông minh
 
@@ -466,13 +468,13 @@ CKB là lớp cơ sở của Nervos Network, với độ bảo mật cao nhất 
 
 Common Knowledge Base là blockchain lớp 1 đầu tiên được xây dựng đặc biệt để hỗ trợ các giao thức lớp 2:
 
-CKB được thiết kế để bổ sung cho các giao thức lớp 2, tập trung vào bảo mật và phi tập trung, thay vì các chồng chéo với các điểm nổi trội của lớp 2 như khả năng mở rộng.
+- CKB được thiết kế để bổ sung cho các giao thức lớp 2, tập trung vào bảo mật và phi tập trung, thay vì các chồng chéo với các điểm nổi trội của lớp 2 như khả năng mở rộng.
 
-CKB xây dựng mô hình sổ cái của nó xung quanh các state, thay vì dựa vào tài khoản. Cell về cơ bản là các state khép kín có thể được tham chiếu bởi các giao dịch và được chuyển qua lại giữa các lớp. Điều này khá phù hợp với kiến trúc lớp, trong đó các đối tượng được tham chiếu và chuyển qua giữa các lớp là các phần trạng thái, thay vì các tài khoản.
+- CKB xây dựng mô hình sổ cái của nó xung quanh các state, thay vì dựa vào tài khoản. Cell về cơ bản là các state khép kín có thể được tham chiếu bởi các giao dịch và được chuyển qua lại giữa các lớp. Điều này khá phù hợp với kiến trúc lớp, trong đó các đối tượng được tham chiếu và chuyển qua giữa các lớp là các phần trạng thái, thay vì các tài khoản.
 
-CKB được thiết kế như một máy xác minh tổng quát, thay vì công cụ tính toán. Điều này cho phép CKB hoạt động như một tòa án mật mã, xác minh các giao dịch state ngoài chuỗi.
+- CKB được thiết kế như một máy xác minh tổng quát, thay vì công cụ tính toán. Điều này cho phép CKB hoạt động như một tòa án mật mã, xác minh các giao dịch state ngoài chuỗi.
 
-CKB cho phép các nhà phát triển dễ dàng thêm các nguyên hàm mã hóa tùy chỉnh. Điều này chứng minh tương lai cho CKB, cho phép xác minh bằng chứng được tạo bởi nhiều giải pháp lớp 2.
+- CKB cho phép các nhà phát triển dễ dàng thêm các nguyên hàm mã hóa tùy chỉnh. Điều này chứng minh tương lai cho CKB, cho phép xác minh bằng chứng được tạo bởi nhiều giải pháp lớp 2.
 
 Common Knowledge Base đặt mục tiêu trở thành cơ sở hạ tầng lưu trữ kiến thức có giá trị nhất thế giới, với hệ sinh thái lớp 2 tốt nhất cung cấp giải pháp xử lý giao dịch blockchain hiệu quả và có khả năng mở rộng nhất.
 
