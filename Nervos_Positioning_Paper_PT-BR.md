@@ -1,5 +1,3 @@
-Nervos
-
 ---
 Número: "0001"
 Categoria: Informacional
